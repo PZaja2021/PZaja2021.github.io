@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>EDM Finds :: News</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="Finds.css">
+</head>
+<body>
+<div id = "wrapper">
+<header>
+	<h1>EDM Finds</h1>
+</header>
+
+<nav>
+	<a href="index.html">Home</a> &nbsp; 
+	<a href="house.html">House Music</a> &nbsp; 
+	<a href="melodic.html">Melodic Music</a> &nbsp;
+	<a href="bass.html">Bass Music</a> &nbsp;
+	<a href="dubstep.html">Dubstep</a> &nbsp;
+	<a href="news.html">News</a> &nbsp;
+	<a href="playlist.html">Playlist</a> &nbsp;
+	
+</nav>
+
+
+<main class="Dcolor">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="KayzoR.png" style="width:100%" alt="kayzo">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Pods.png" style="width:100%" alt="pods">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="PodInfo.png" style="width:100%" alt="podinfo">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>	
+	
+	<h2> Breaking News! </h2>
+	<p> Relentless Beats has set up the first non-car concert in AZ since the beginning of the pandemic! <br> The concert will be held at Rawhide Event Center (see the Google Map below for the exact location). </p>
+	<p> With traditional concerts being cancelled since early March, this is fantastic opportunity to get outside, enjoy the weather, and get back to experiencing concerts how they're meant to be experienced!<p>
+	
+	<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.840816262204!2d-111.98473584900549!3d33.27065948073157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b03979ba1aeb5%3A0xd0aa6a077c3ee7cd!2sRawhide%20Western%20Town%20%26%20Event%20Center!5e0!3m2!1sen!2sus!4v1602106721113!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</p>
+		
+	<p><iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FPhoenix&amp;src=cHphamEyNUBnbWFpbC5jb20&amp;src=NGJtY2Jldmw4N2U4bDdjNXViNnFwbTI3NDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%234285F4&amp;color=%2333B679&amp;color=%230B8043" style="border:solid 1px #777" width="400" height="400"></iframe>
+	</p>
+		
+</main> 
+<footer> 
+	Copyright &copy; 2020 EDMFinds <br> 
+</footer>
+</div>
+</body>
+</html>
